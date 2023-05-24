@@ -44,7 +44,7 @@
         <div class="garis"></div>
         <h3>Hitung Luas persegi</h3>
         <div class="container-input-nilai">
-            <input type="text" class="input-nilai" name="input-nilai" id="input-sisi" placeholder="Nilai sisi" required>
+            <input type="text" class="input-nilai" name="sisi-luas" id="input-sisi" placeholder="Nilai sisi" required>
         </div>
         <div class="hidden" id="penyelesaian">
             <div>L = S x S</div>
@@ -52,7 +52,7 @@
             <div>L = <span id="hasil-luas"></span></div>
         </div>
         <div class="container-hitung">
-            <button onclick="hitungLuas()" class="hitung">Hitung</button>
+            <button onclick="hitungLuas()" class="hitung" name="hitung-luas">Hitung</button>
         </div>
         <div class="container-reset">
             <button onclick="resetLuas()" class="reset">Reset</button>
@@ -81,7 +81,7 @@
         <div class="garis"></div>
         <h3>Hitung Keliling persegi</h3>
         <div class="container-input-nilai">
-            <input type="text" class="input-nilai" name="input-nilai" id="input-sisi-keliling" placeholder="Nilai sisi" required>
+            <input type="text" class="input-nilai" name="sisi-keliling" id="input-sisi-keliling" placeholder="Nilai sisi" required>
         </div >
         <div class="hidden" id="penyelesaian-keliling">
             <div>K = 4 x S</div>
@@ -89,7 +89,7 @@
             <div>K = <span id="hasil-keliling"></span></div>
         </div>
         <div class="container-hitung">
-            <button class="hitung" onclick="hitungKeliling()">Hitung</button>
+            <button class="hitung" onclick="hitungKeliling()" name="hitung-keliling">Hitung</button>
         </div>
         <div class="container-reset">
             <button class="reset" onclick="resetKeliling()">Reset</button>
