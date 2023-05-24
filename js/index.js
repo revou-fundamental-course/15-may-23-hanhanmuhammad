@@ -33,23 +33,27 @@ const hitungKeliling = () => {
     const divPenyelesaianKeliling = document.getElementById("penyelesaian-keliling")
     divPenyelesaianKeliling.classList.remove("hidden")
  
+    // mengambil nilai input dan menghitung keliling
    const input = document.getElementById("input-sisi-keliling")
    const sisi = input.value
    const keliling = 4*sisi
 
+    // menampilkan cara perhitungan
    const nilaiSisiKeliling = document.getElementById("sisi-keliling")
    nilaiSisiKeliling.innerText = `4 x ${sisi}`
 
+   // menampilkan hasil keliling
    const hasilKeliling = document.getElementById("hasil-keliling")
    hasilKeliling.innerText = keliling
 
 }
 
 const resetKeliling = () => {
-    // mengonsongkan nilai input
+    // menyembunyikan output hasil
     const divPenyelesaianKeliling = document.getElementById("penyelesaian-keliling")
     divPenyelesaianKeliling.classList.add("hidden")
     
+    // mengonsongkan nilai input
     const input = document.getElementById("input-sisi-keliling")
     input.value = ""
 }
