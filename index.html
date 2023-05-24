@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="./js/index.js"></script>
+
+</head>
+
+<body style="font-family:Arial, Helvetica, sans-serif ;">
+  <div class="main-page">
+    <header>
+        <span class="title">Kaltik</span>&nbsp;<span class="subtitle">Kalkulator Matematik</span>
+    </header>
+    <main class="second-page">
+        <h2>Welcome to Katik</h2>
+        <p class="intermezzo">Hai sobat, selamat datang di Katik :) <br> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
+        </p>    
+        <div class="persegi">Persegi</div>
+        <div class="panjang"></div>
+
+<!--Bagian Luas Persegi-->
+        <div class="judul-persegi">Luas Persegi</div>  
+        <div class="container-square">
+            <div class="square">
+                <span class="sudut-a">A</span>
+                <span class="sudut-b">B</span>
+                <span class="sudut-c">C</span>
+                <span class="sudut-d">D</span>
+            </div>
+        </div>
+        <div class="formula-description">
+            <div class="bujur-sangkar">Bujur Sangkar</div> 
+            <br>
+            <div>Rumus Luas Persegi yaitu :</div>
+           <div class="rumus"> L = S x S</div>
+           <div>Dimana:</div>
+           <div>L = Luas</div>
+           <div>S = Sisi</div>
+        </div>
+        <div class="garis"></div>
+        <h3>Hitung Luas persegi</h3>
+        <div class="container-input-nilai">
+            <input type="text" class="input-nilai" name="input-nilai" id="input-sisi" placeholder="Nilai sisi" required>
+        </div>
+        <div class="hidden" id="penyelesaian">
+            <div>L = S x S</div>
+            <div>L = <span id="nilai-sisi"></span></div>
+            <div>L = <span id="hasil-luas"></span></div>
+        </div>
+        <div class="container-hitung">
+            <button onclick="hitungLuas()" class="hitung">Hitung</button>
+        </div>
+        <div class="container-reset">
+            <button onclick="resetLuas()" class="reset">Reset</button>
+        </div>
+
+<!--Bagian Keliling Persegi-->
+        <div class="spasi"></div>
+        <div class="judul-persegi">Keliling Persegi</div>  
+        <div class="container-square">
+            <div class="square">
+                <span class="sudut-a">A</span>
+                <span class="sudut-b">B</span>
+                <span class="sudut-c">C</span>
+                <span class="sudut-d">D</span>
+            </div>
+        </div>
+        <div class="formula-description">
+            <div class="bujur-sangkar">Bujur Sangkar</div> 
+            <br>
+            <div>Rumus Keliling Persegi yaitu :</div>
+           <div class="rumus"> K = 4 x S</div>
+           <div>Dimana:</div>
+           <div>K = Keliling</div>
+           <div>S = Sisi</div>
+        </div>
+        <div class="garis"></div>
+        <h3>Hitung Keliling persegi</h3>
+        <div class="container-input-nilai">
+            <input type="text" class="input-nilai" name="input-nilai" id="input-sisi-keliling" placeholder="Nilai sisi" required>
+        </div >
+        <div class="hidden" id="penyelesaian-keliling">
+            <div>K = 4 x S</div>
+            <div>K = <span id="sisi-keliling"></span></div>
+            <div>K = <span id="hasil-keliling"></span></div>
+        </div>
+        <div class="container-hitung">
+            <button class="hitung" onclick="hitungKeliling()">Hitung</button>
+        </div>
+        <div class="container-reset">
+            <button class="reset" onclick="resetKeliling()">Reset</button>
+        </div>
+    </main>
+    
+    <footer class="container-footer">
+
+    </footer>
+  </div>
+</body>
+</html>
