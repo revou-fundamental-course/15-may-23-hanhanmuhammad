@@ -5,16 +5,16 @@ function hitungLuas() {
     divPenyelesaian.classList.remove("hidden")
 
     // mengambil nilai input dan menghitung luas
-    var input = document.getElementById("input-sisi")
+    var input = document.getElementById("sisi-luas")
     var sisi = input.value
     var luas = sisi*sisi
     
     // menampilkan cara perhitungan
-    var nilaiSisiPersegi = document.getElementById("nilai-sisi")
+    var nilaiSisiPersegi = document.getElementById("nilai-sisi-luas")
     nilaiSisiPersegi.innerText = `${sisi} x ${sisi}`
 
     // menampilkan hasil luas
-    var hasilLuas = document.getElementById("hasil-luas")
+    var hasilLuas = document.getElementById("output_luas")
     hasilLuas.innerText = luas
 }
 
@@ -24,7 +24,7 @@ function resetLuas() {
     divPenyelesaian.classList.add("hidden")
 
     // mengonsongkan nilai input luas
-    var input = document.getElementById("input-sisi")
+    var input = document.getElementById("sisi-luas")
     input.value = ""
 }
     
@@ -34,16 +34,16 @@ const hitungKeliling = () => {
     divPenyelesaianKeliling.classList.remove("hidden")
  
     // mengambil nilai input dan menghitung keliling
-   const input = document.getElementById("input-sisi-keliling")
+   const input = document.getElementById("sisi-keliling")
    const sisi = input.value
    const keliling = 4*sisi
 
     // menampilkan cara perhitungan
-   const nilaiSisiKeliling = document.getElementById("sisi-keliling")
+   const nilaiSisiKeliling = document.getElementById("nilai-sisi-keliling")
    nilaiSisiKeliling.innerText = `4 x ${sisi}`
 
    // menampilkan hasil keliling
-   const hasilKeliling = document.getElementById("hasil-keliling")
+   const hasilKeliling = document.getElementById("output_keliling")
    hasilKeliling.innerText = keliling
 
 }
@@ -54,6 +54,6 @@ const resetKeliling = () => {
     divPenyelesaianKeliling.classList.add("hidden")
     
     // mengonsongkan nilai input keliling
-    const input = document.getElementById("input-sisi-keliling")
+    const input = document.getElementById("sisi-keliling")
     input.value = ""
 }
