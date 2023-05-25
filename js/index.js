@@ -1,6 +1,6 @@
 
 function hitungLuas() {
-    // menampilkan output hasil
+    // menampilkan output hasil luas
     var divPenyelesaian = document.getElementById("penyelesaian")
     divPenyelesaian.classList.remove("hidden")
 
@@ -23,13 +23,13 @@ function resetLuas() {
     var divPenyelesaian = document.getElementById("penyelesaian")
     divPenyelesaian.classList.add("hidden")
 
-    // mengonsongkan nilai input
+    // mengonsongkan nilai input luas
     var input = document.getElementById("input-sisi")
     input.value = ""
 }
     
 const hitungKeliling = () => {
-    // menampilkan output hasil
+    // menampilkan output hasil keliling
     const divPenyelesaianKeliling = document.getElementById("penyelesaian-keliling")
     divPenyelesaianKeliling.classList.remove("hidden")
  
@@ -49,11 +49,11 @@ const hitungKeliling = () => {
 }
 
 const resetKeliling = () => {
-    // menyembunyikan output hasil
+    // menyembunyikan output hasil perhitungan
     const divPenyelesaianKeliling = document.getElementById("penyelesaian-keliling")
     divPenyelesaianKeliling.classList.add("hidden")
     
-    // mengonsongkan nilai input
+    // mengonsongkan nilai input keliling
     const input = document.getElementById("input-sisi-keliling")
     input.value = ""
 }
